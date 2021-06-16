@@ -1,24 +1,10 @@
 
-d
-4src/main/java/AtencionMesa/values/correoCliente.java,9\9\9990cc4502697bf2e904395c5e1fa62aef18dd1d
-c
-3src/main/java/AtencionMesa/values/correoMesero.java,b\1\b18fae98c1e09367939621c468a85d25137947a6
-`
-0src/main/java/AtencionMesa/values/clienteId.java,2\c\2cf0ec6a9446ad93247b87a05918f0b73067a58b
-_
-/src/main/java/AtencionMesa/values/meseroId.java,0\4\0430c7160f9fd87dc404ee271f88b8cfbbd9a91a
-c
-3src/main/java/AtencionMesa/values/nombreMesero.java,8\7\87c2836611ef3cb6a8d87c0dd88653dab0967368
-p
-@src/main/java/AtencionMesa/values/cantidadProductosElegidos.java,0\1\01969869d0ee8a4965f99e24e76f4e156095ed44
 R
 "src/main/java/Compra/Producto.java,8\a\8aa41a3587e123203ab2d84cb675da1582fcb066
 V
 &src/main/java/Facturacion/Factura.java,c\3\c35f74e283895c5ee190eb5520c96df1fa3cb3f9
 U
 %src/main/java/Facturacion/Cajero.java,5\6\56c693484209e70d7e60a3968e0ac09141524cc0
-d
-4src/main/java/AtencionMesa/values/nombreCliente.java,7\d\7de3733f36778151b799d95bab12e6594a7feb26
 i
 9src/main/java/Compra/values/cantidadProductoComprado.java,7\e\7eb6f5251737398584029761fa8563ba96651bd8
 Z
