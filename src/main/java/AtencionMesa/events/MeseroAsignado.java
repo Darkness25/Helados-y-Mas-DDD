@@ -1,17 +1,18 @@
 package AtencionMesa.events;
 
+import AtencionMesa.values.meseroId;
 import co.com.sofka.domain.generic.DomainEvent;
 
 public class MeseroAsignado extends DomainEvent {
 
-    private final MeseroAsignado mesero;
+    private final meseroId mesero;
 
-    public MeseroAsignado(MeseroAsignado mesero) {
+    public MeseroAsignado(meseroId mesero) {
         super("sofka.atencionmesa.meseroasignado");
         this.mesero = mesero;
     }
 
-    public MeseroAsignado getMesero(){
+    public meseroId getMeseroId(){
         return mesero;
     }
 }

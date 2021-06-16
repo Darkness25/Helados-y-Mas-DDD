@@ -1,4 +1,6 @@
 package Facturacion.values;
 
-public class facturaId {
+import co.com.sofka.domain.generic.Identity;
+
+public class facturaId extends Identity {
 }

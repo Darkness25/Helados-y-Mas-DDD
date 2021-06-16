@@ -1,4 +1,9 @@
 package Compra.values;
 
-public class nombreProducto {
+import co.com.sofka.domain.generic.ValueObject;
+
+public class nombreProducto implements ValueObject<String> {
+    public String value() {
+        return null;
+    }
 }

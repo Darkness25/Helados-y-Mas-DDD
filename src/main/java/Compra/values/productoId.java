@@ -1,4 +1,6 @@
 package Compra.values;
 
-public class productoId {
+import co.com.sofka.domain.generic.Identity;
+
+public class productoId extends Identity {
 }
