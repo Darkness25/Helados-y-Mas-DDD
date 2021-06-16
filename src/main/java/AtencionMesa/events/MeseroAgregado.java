@@ -15,6 +15,9 @@ public class MeseroAgregado extends DomainEvent {
     private Salario salario;
 
 
+    public meseroId entityId() {
+        return entityId;
+    }
 
     public nombreMesero nombremesero() {
         return nombremesero;

@@ -6,15 +6,15 @@ import AtencionMesa.events.MeseroAgregado;
 import AtencionMesa.events.MeseroAsignado;
 import AtencionMesa.values.*;
 import co.com.sofka.domain.generic.AggregateEvent;
+import co.com.sofka.domain.generic.DomainEvent;
 
-import java.util.Objects;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 
 public class AtencionMesa extends AggregateEvent<atencionMesaId> {
 
 
+    protected atencionMesaId atencionmesaId;
     protected clienteId cliente;
     protected meseroId mesero;
     protected Set<Cliente> clientes;
@@ -31,6 +31,13 @@ public class AtencionMesa extends AggregateEvent<atencionMesaId> {
         super(entityId);
         subscribe(new AtencionMesaChange(this));
 
+    }
+
+    public static AtencionMesa from(atencionMesaId atencionmesa, List<DomainEvent> events)
+    {
+        var atencionMesa = new AtencionMesa(atencionmesa);
+        events.forEach(atencionMesa::applyEvent);
+        return atencionMesa;
     }
 
 
@@ -78,6 +85,10 @@ public class AtencionMesa extends AggregateEvent<atencionMesaId> {
 
     public clienteId cliente(){
         return cliente;
+    }
+
+    public atencionMesaId atencionmesaId(){
+        return atencionmesaId;
     }
 
     public meseroId mesero(){

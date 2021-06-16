@@ -10,6 +10,15 @@ public class ClienteAgregado extends DomainEvent {
     private nombreCliente nombrecliente;
     private correoCliente correocliente;
 
+
+
+    public ClienteAgregado(clienteId entityId, nombreCliente nombrecliente, correoCliente correocliente) {
+        super("sofka.atencionmesa.clienteagregado");
+        this.entityId = entityId;
+        this.nombrecliente = nombrecliente;
+        this.correocliente = correocliente;
+    }
+
     public clienteId entityId() {
         return entityId;
     }
@@ -20,13 +29,6 @@ public class ClienteAgregado extends DomainEvent {
 
     public correoCliente correocliente() {
         return correocliente;
-    }
-
-    public ClienteAgregado(clienteId entityId, nombreCliente nombrecliente, correoCliente correocliente) {
-        super("sofka.atencionmesa.clienteagregado");
-        this.entityId = entityId;
-        this.nombrecliente = nombrecliente;
-        this.correocliente = correocliente;
     }
 
 }
